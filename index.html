@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contactos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="contenedorContactos">
+            <div class="titulo">
+                <h2>Agenda de  contactos</h2>
+            </div>
+            <div class="datos">
+                <input type="text" class="nombreContacto" id="nombreContacto" maxlength="9" placeholder="Introduce el nombre del contacto">
+                <input type="text" maxlength="9" class="numeroContacto" id="numeroContacto" placeholder="Introduce el numero del contacto">
+                <input type="date" class="fechaContacto" id="fechaContacto" >
+                <button type="button" class="btnAgregarContacto" id="btnAgregarContacto">AGREGAR CONTACTO</button>
+            </div>
+            <div class="listadoContactos" id="listadoContactos">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
