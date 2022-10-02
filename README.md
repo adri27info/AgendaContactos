@@ -2,7 +2,7 @@
 
 This is a js project based on adding contacts to the agenda.
 
-![Image text](img/app-preview.png)
+![Image text](img/app-preview.PNG)
 
 ## Table of contents
 
