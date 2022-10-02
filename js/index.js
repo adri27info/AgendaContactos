@@ -38,12 +38,12 @@ function guardarContacto(db, nombre, numeroContacto, fecha) {
 function cargarContactos() {
   limpiarValoresCampos();
   let keysLocalStorage = Object.keys(db);
-  if (keysLocalStorage.length !== 0) {
-    let longitudStorage = db.length;
-    for (let index = 0; index < longitudStorage; index++) {
-      const obj = JSON.parse(db.getItem(keysLocalStorage[index]));
+  let longitudStorage = db.length;
+  for (let index = 0; index < longitudStorage; index++) {
+    const obj = JSON.parse(db.getItem(keysLocalStorage[index]));
+    if (obj.hasOwnProperty("id") && obj.hasOwnProperty("nombre"))
       crearContacto(obj);
-    }
+    else continue;
   }
 }
 
